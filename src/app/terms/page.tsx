@@ -147,8 +147,8 @@ export default function TermsPage() {
                 </p>
                 <p className="mt-2">
                   <strong>Email:</strong>{" "}
-                  <a href="mailto:legal@primodial.org" className="text-primary hover:underline">
-                    legal@primodial.org
+                  <a href="mailto:contact@veluneholdings.com" className="text-primary hover:underline">
+                    contact@veluneholdings.com
                   </a>
                 </p>
               </CardContent>

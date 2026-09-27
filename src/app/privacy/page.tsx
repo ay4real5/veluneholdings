@@ -123,7 +123,7 @@ export default function PrivacyPage() {
                   <li>Opting out of marketing communications</li>
                 </ul>
                 <p className="text-muted-foreground mt-4">
-                  To exercise these rights, please contact us at privacy@primodial.org.
+                  To exercise these rights, please contact us at contact@veluneholdings.com.
                 </p>
               </CardContent>
             </Card>
@@ -138,8 +138,8 @@ export default function PrivacyPage() {
                 </p>
                 <p className="mt-2">
                   <strong>Email:</strong>{" "}
-                  <a href="mailto:privacy@primodial.org" className="text-primary hover:underline">
-                    privacy@primodial.org
+                  <a href="mailto:contact@veluneholdings.com" className="text-primary hover:underline">
+                    contact@veluneholdings.com
                   </a>
                 </p>
                 <p className="mt-2">

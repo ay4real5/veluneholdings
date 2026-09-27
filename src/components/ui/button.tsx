@@ -14,9 +14,7 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        // Division variants
-        health: "bg-health text-health-foreground hover:bg-health-dark",
-        "health-outline": "border-2 border-health text-health hover:bg-health-light",
+        // Brand variants
         government: "bg-government text-government-foreground hover:bg-government-dark",
         "government-outline": "border-2 border-government text-government hover:bg-government-light",
       },

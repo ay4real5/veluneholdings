@@ -7,32 +7,32 @@ import { StickyCTA } from "@/components/sticky-cta";
 
 export const metadata: Metadata = {
   title: {
-    default: "Velune Holdings LLC | Healthcare & Government Contracting",
+    default: "Velune Holdings LLC | Government Contracting",
     template: "%s | Velune Holdings LLC",
   },
-  description: "Velune Holdings LLC delivers excellence across healthcare services and government contracting solutions. Trusted partner for families and agencies.",
-  keywords: ["healthcare", "home health", "government contracting", "federal contracts", "caregiver services"],
+  description: "Velune Holdings LLC delivers professional government contracting solutions. Trusted partner for federal, state, and local agencies.",
+  keywords: ["government contracting", "federal contracts", "facilities management", "procurement", "compliance"],
   authors: [{ name: "Velune Holdings LLC" }],
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.primodial.org",
+    url: "https://veluneholdings.com",
     siteName: "Velune Holdings LLC",
-    title: "Velune Holdings LLC | Healthcare & Government Contracting",
-    description: "Velune Holdings LLC delivers excellence across healthcare services and government contracting solutions.",
+    title: "Velune Holdings LLC | Government Contracting",
+    description: "Velune Holdings LLC delivers professional government contracting solutions.",
     images: [
       {
         url: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&h=630&fit=crop&q=85",
         width: 1200,
         height: 630,
-        alt: "Velune Holdings LLC — Healthcare & Government Contracting",
+        alt: "Velune Holdings LLC — Government Contracting",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Velune Holdings LLC | Healthcare & Government Contracting",
-    description: "Velune Holdings LLC delivers excellence across healthcare services and government contracting solutions.",
+    title: "Velune Holdings LLC | Government Contracting",
+    description: "Velune Holdings LLC delivers professional government contracting solutions.",
     images: ["https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&h=630&fit=crop&q=85"],
   },
   robots: {

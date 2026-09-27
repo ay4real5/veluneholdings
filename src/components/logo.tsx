@@ -1,14 +1,12 @@
 import { cn } from "@/lib/utils";
 
 interface LogoProps {
-  division?: "health" | "government" | "parent";
   size?: "sm" | "md" | "lg";
   className?: string;
   showWordmark?: boolean;
 }
 
 export function Logo({
-  division = "parent",
   size = "md",
   className,
   showWordmark = true,
@@ -19,14 +17,7 @@ export function Logo({
   const subtextSize =
     size === "sm" ? "text-[9px]" : size === "lg" ? "text-sm" : "text-[11px]";
 
-  const divisionLabel =
-    division === "health"
-      ? "HEALTH"
-      : division === "government"
-      ? "GOVERNMENT"
-      : null;
-
-  const uid = division + size;
+  const uid = `velune-${size}`;
 
   return (
     <div className={cn("flex items-center gap-2.5", className)}>
@@ -50,12 +41,6 @@ export function Logo({
             <stop offset="0%" stopColor="#A78BFA" />
             <stop offset="100%" stopColor="#3B82F6" />
           </linearGradient>
-          {/* Parent tri-gradient */}
-          <linearGradient id={`g-full-${uid}`} x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="#2DD4BF" />
-            <stop offset="50%" stopColor="#3B82F6" />
-            <stop offset="100%" stopColor="#A78BFA" />
-          </linearGradient>
 
           <filter id={`drop-${uid}`} x="-20%" y="-20%" width="140%" height="140%">
             <feDropShadow dx="0" dy="1" stdDeviation="2" floodColor="rgba(0,0,0,0.12)" />
@@ -75,7 +60,6 @@ export function Logo({
 
         {/*
           Abstract interlocking mark — two curved segments that form a unified "pill" shape.
-          The overall silhouette reads as a single entity, but the split reveals two divisions.
           Inspired by Mastercard's Venn principle + Audi's interlocking rings.
         */}
 
@@ -127,12 +111,7 @@ export function Logo({
           width="8"
           height="4"
           rx="2"
-          fill={division === "parent"
-            ? `url(#g-full-${uid})`
-            : division === "health"
-            ? `url(#g-teal-${uid})`
-            : `url(#g-violet-${uid})`
-          }
+          fill={`url(#g-violet-${uid})`}
         />
 
         {/* Inner negative-space dot — white, creates a focal point */}
@@ -153,27 +132,20 @@ export function Logo({
         <div className="flex flex-col leading-none">
           <span
             className={cn(
-              "font-heading font-bold tracking-tight",
-              textSize,
-              division === "health" && "text-health-dark",
-              division === "government" && "text-government-dark",
-              division === "parent" && "text-primary-800"
+              "font-heading font-bold tracking-tight text-government-dark",
+              textSize
             )}
           >
-            {division === "health" ? "Primodial" : "Velune"}
+            Velune
           </span>
-          {divisionLabel && (
-            <span
-              className={cn(
-                "font-sans font-semibold tracking-[0.12em] uppercase mt-0.5",
-                subtextSize,
-                division === "health" && "text-health",
-                division === "government" && "text-government"
-              )}
-            >
-              {divisionLabel}
-            </span>
-          )}
+          <span
+            className={cn(
+              "font-sans font-semibold tracking-[0.12em] uppercase mt-0.5 text-government",
+              subtextSize
+            )}
+          >
+            Holdings LLC
+          </span>
         </div>
       )}
     </div>

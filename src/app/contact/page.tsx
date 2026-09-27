@@ -7,11 +7,11 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select } from "@/components/ui/select";
-import { Phone, Mail, MapPin, Clock, Heart, Building2, ArrowRight } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Building2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: "Get in touch with Velune Holdings LLC. Contact our Health division for care inquiries or our Government division for partnership opportunities.",
+  description: "Get in touch with Velune Holdings LLC for contracting inquiries and partnership opportunities.",
 };
 
 export default function ContactPage() {
@@ -34,7 +34,7 @@ export default function ContactPage() {
           <div className="max-w-2xl text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.8)]">
             <h1 className="font-heading text-4xl sm:text-5xl font-bold mb-4">Contact Us</h1>
             <p className="text-lg text-white/90">
-              We&apos;re here to help. Reach out to the appropriate division for your needs.
+              We&apos;re here to help. Reach out for contracting inquiries and partnership opportunities.
             </p>
           </div>
         </div>
@@ -43,49 +43,14 @@ export default function ContactPage() {
       {/* Contact Options */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-8 mb-16">
-            {/* Health Contact Card */}
-            <Card className="border-health/20">
-              <CardHeader>
-                <div className="w-14 h-14 rounded-xl bg-health-light flex items-center justify-center mb-4">
-                  <Heart className="w-7 h-7 text-health" />
-                </div>
-                <CardTitle className="font-heading text-xl">Health Division</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-muted-foreground">
-                  For home health care inquiries, care planning, and service questions.
-                </p>
-                <div className="space-y-3">
-                  <a href="tel:+15715757174" className="flex items-center gap-3 text-health hover:text-health-dark">
-                    <Phone className="w-5 h-5" />
-                    <span className="font-medium">(571) 575-7174</span>
-                  </a>
-                  <a href="mailto:health@veluneholdings.com" className="flex items-center gap-3 text-muted-foreground hover:text-health">
-                    <Mail className="w-5 h-5" />
-                    <span>health@veluneholdings.com</span>
-                  </a>
-                  <div className="flex items-center gap-3 text-muted-foreground">
-                    <Clock className="w-5 h-5" />
-                    <span>Available 24/7 for urgent needs</span>
-                  </div>
-                </div>
-                <Link href="/health">
-                  <Button variant="health" className="w-full mt-4">
-                    Visit Health Division
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-
-            {/* Government Contact Card */}
+          <div className="max-w-2xl mx-auto mb-16">
+            {/* Contact Card */}
             <Card className="border-government/20">
               <CardHeader>
                 <div className="w-14 h-14 rounded-xl bg-government-light flex items-center justify-center mb-4">
                   <Building2 className="w-7 h-7 text-government" />
                 </div>
-                <CardTitle className="font-heading text-xl">Government Division</CardTitle>
+                <CardTitle className="font-heading text-xl">Velune Holdings LLC</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground">
@@ -96,18 +61,18 @@ export default function ContactPage() {
                     <Phone className="w-5 h-5" />
                     <span className="font-medium">(571) 575-7174</span>
                   </a>
-                  <a href="mailto:gov@veluneholdings.com" className="flex items-center gap-3 text-muted-foreground hover:text-government">
+                  <a href="mailto:contact@veluneholdings.com" className="flex items-center gap-3 text-muted-foreground hover:text-government">
                     <Mail className="w-5 h-5" />
-                    <span>gov@veluneholdings.com</span>
+                    <span>contact@veluneholdings.com</span>
                   </a>
                   <div className="flex items-center gap-3 text-muted-foreground">
                     <Clock className="w-5 h-5" />
                     <span>Business hours: Mon-Fri, 9AM-5PM ET</span>
                   </div>
                 </div>
-                <Link href="/government">
+                <Link href="/capabilities">
                   <Button variant="government" className="w-full mt-4">
-                    Visit Government Division
+                    View Our Capabilities
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
                 </Link>
@@ -145,11 +110,11 @@ export default function ContactPage() {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="division">I&apos;m interested in *</Label>
-                  <Select id="division" required>
-                    <option value="">Select a division...</option>
-                    <option value="health">Health Services</option>
+                  <Label htmlFor="topic">I&apos;m interested in *</Label>
+                  <Select id="topic" required>
+                    <option value="">Select a topic...</option>
                     <option value="government">Government Contracting</option>
+                    <option value="partnership">Partnership / Teaming</option>
                     <option value="general">General Inquiry</option>
                   </Select>
                 </div>

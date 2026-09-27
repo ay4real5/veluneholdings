@@ -5,7 +5,7 @@ import { Heart, Building2, Target, Eye, Compass, CheckCircle } from "lucide-reac
 
 export const metadata: Metadata = {
   title: "About Velune Holdings LLC | Our Mission & Values",
-  description: "Learn about Velune Holdings LLC's mission, values, and commitment to excellence in healthcare and government contracting.",
+  description: "Learn about Velune Holdings LLC's mission, values, and commitment to excellence in government contracting.",
 };
 
 export default function AboutPage() {
@@ -30,9 +30,8 @@ export default function AboutPage() {
               About Velune Holdings LLC
             </h1>
             <p className="text-lg text-white/90 max-w-xl leading-relaxed">
-              A US-registered company committed to delivering excellence across two distinct 
-              but equally important domains: compassionate home health care and professional 
-              government contracting.
+              A US-registered company committed to delivering excellence in professional 
+              government contracting for federal, state, and local agencies.
             </p>
           </div>
         </div>
@@ -51,9 +50,8 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  To deliver exceptional service that improves lives and strengthens 
-                  communities. Whether providing care to families in need or supporting 
-                  government agencies in their critical missions, we bring dedication, 
+                  To deliver exceptional service that strengthens communities by supporting 
+                  government agencies in their critical missions. We bring dedication, 
                   expertise, and integrity to every engagement.
                 </p>
               </CardContent>
@@ -68,10 +66,9 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  To be recognized as a trusted partner of choice—known for 
-                  compassionate care that families rely on and professional 
+                  To be recognized as a trusted partner of choice—known for professional 
                   contracting that agencies depend on. We aim to set the standard 
-                  for quality in both healthcare and government services.
+                  for quality in government services.
                 </p>
               </CardContent>
             </Card>
@@ -93,10 +90,10 @@ export default function AboutPage() {
 
           <div className="grid sm:grid-cols-2 gap-6">
             {[
-              { icon: Target, title: "Excellence", color: "bg-primary/10 text-primary", border: "border-l-primary", description: "We pursue the highest standards in every service we deliver, whether caring for a loved one or fulfilling a government contract." },
-              { icon: Heart, title: "Compassion", color: "bg-health/10 text-health", border: "border-l-health", description: "We approach every interaction with empathy and understanding, recognizing the human impact of our work." },
+              { icon: Target, title: "Excellence", color: "bg-primary/10 text-primary", border: "border-l-primary", description: "We pursue the highest standards in every service we deliver and every contract we fulfill." },
+              { icon: Heart, title: "Dedication", color: "bg-primary/10 text-primary", border: "border-l-primary", description: "We approach every engagement with commitment and care, recognizing the human impact of our work." },
               { icon: Compass, title: "Integrity", color: "bg-secondary/10 text-secondary", border: "border-l-secondary", description: "We operate with transparency, honesty, and unwavering ethical standards in all our business practices." },
-              { icon: Building2, title: "Compliance", color: "bg-government/10 text-government", border: "border-l-government", description: "We maintain rigorous adherence to regulations, standards, and best practices across all divisions." }
+              { icon: Building2, title: "Compliance", color: "bg-government/10 text-government", border: "border-l-government", description: "We maintain rigorous adherence to regulations, standards, and best practices across all engagements." }
             ].map((value) => (
               <Card key={value.title} className={`border-l-4 ${value.border} hover:shadow-md transition-shadow`}>
                 <CardHeader className="flex flex-row items-center gap-4 pb-2">
@@ -114,52 +111,29 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Divisions Overview */}
+      {/* What We Do */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-primary mb-4">
-              Our Divisions
+              What We Do
             </h2>
             <p className="text-muted-foreground">
-              Two specialized divisions, united by a common commitment to excellence.
+              Professional contracting services, delivered with a common commitment to excellence.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
-            <Card className="border-health/20">
-              <CardHeader>
-                <div className="w-14 h-14 rounded-xl bg-health-light flex items-center justify-center mb-4">
-                  <Heart className="w-7 h-7 text-health" />
-                </div>
-                <CardTitle className="font-heading text-xl">Primodial Health</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Our Health division provides compassionate, personalized in-home care 
-                  services for seniors and individuals who need assistance with daily 
-                  living. We help families keep their loved ones safe, comfortable, and 
-                  independent in their own homes.
-                </p>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Personal care and companionship</li>
-                  <li>• Health monitoring and medication management</li>
-                  <li>• Transportation and specialized care services</li>
-                  <li>• 24/7 care coordination and support</li>
-                </ul>
-              </CardContent>
-            </Card>
-
+          <div className="max-w-2xl mx-auto">
             <Card className="border-government/20">
               <CardHeader>
                 <div className="w-14 h-14 rounded-xl bg-government-light flex items-center justify-center mb-4">
                   <Building2 className="w-7 h-7 text-government" />
                 </div>
-                <CardTitle className="font-heading text-xl">Velune</CardTitle>
+                <CardTitle className="font-heading text-xl">Government Contracting</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Velune delivers professional contracting services 
+                  Velune Holdings LLC delivers professional contracting services 
                   for federal, state, and local agencies. We serve as a capable 
                   partner for a wide range of contracting needs, with a focus on 
                   quality, compliance, and timely delivery.
@@ -185,17 +159,17 @@ export default function AboutPage() {
                 Why Choose Velune Holdings LLC?
               </h2>
               <p className="text-muted-foreground mb-8">
-                We bring operational expertise, genuine care, and a compliance-first mindset 
-                to every engagement. Whether you are a family seeking care or an agency 
-                seeking a contractor, we show up with professionalism and dedication.
+                We bring operational expertise and a compliance-first mindset 
+                to every engagement. For agencies seeking a reliable contractor, 
+                we show up with professionalism and dedication.
               </p>
               <div className="space-y-4">
                 {[
-                  "Nationwide coverage across both divisions",
+                  "Nationwide coverage for government contracts",
                   "Background-checked and trained professionals",
                   "FAR-aware processes for all government work",
                   "SAM.gov registered · UEI: EUDTX5ULD6B1",
-                  "24/7 care coordination for health clients",
+                  "Responsive support for agency partners",
                   "Single trusted partner for diverse service needs"
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3">
@@ -209,8 +183,8 @@ export default function AboutPage() {
               <div className="space-y-4">
                 <div className="rounded-2xl overflow-hidden shadow-lg aspect-[3/4] relative">
                   <Image
-                    src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=400&q=85"
-                    alt="Caregiver with patient"
+                    src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&q=85"
+                    alt="Government contracting professionals in a meeting"
                     fill
                     className="object-cover"
                   />
@@ -239,7 +213,7 @@ export default function AboutPage() {
               Coverage & Operations
             </h2>
             <p className="text-muted-foreground">
-              We operate across the United States, serving families and agencies nationwide.
+              We operate across the United States, serving agencies nationwide.
             </p>
           </div>
 
@@ -250,8 +224,8 @@ export default function AboutPage() {
                 <p className="text-sm text-muted-foreground">Nationwide operations and coverage</p>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-                <p className="text-sm text-muted-foreground">Health division availability</p>
+                <div className="text-3xl font-bold text-primary mb-2">Responsive</div>
+                <p className="text-sm text-muted-foreground">Agency support and coordination</p>
               </div>
               <div>
                 <div className="text-3xl font-bold text-primary mb-2">Multi-State</div>
