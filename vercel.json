@@ -2,9 +2,7 @@
   "outputDirectory": "dist",
   "trailingSlash": true,
   "redirects": [
-    { "source": "/government", "destination": "/", "permanent": true },
-    { "source": "/government/:path*", "destination": "/:path*", "permanent": true },
-    { "source": "/health", "destination": "https://www.primordialhealthservices.health/", "permanent": true },
-    { "source": "/health/:path*", "destination": "https://www.primordialhealthservices.health/:path*", "permanent": true }
+    { "source": "/government/:path(.*)", "destination": "/:path", "permanent": true },
+    { "source": "/health/:path(.*)", "destination": "https://www.primordialhealthservices.health/:path", "permanent": true }
   ]
 }
